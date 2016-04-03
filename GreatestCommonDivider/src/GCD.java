@@ -18,10 +18,9 @@ public class GCD {
 
 	public static String gcd(int first, int second){
 		 int nominator=first;
-		 int denominator=second;
-		 
-		 
-		 if (nominator<denominator){
+		 int denominator=second;// accept two integers 
+		 		 
+		 if (nominator<denominator){// check if nominator is greater than denominator.
 			 System.out.println("The first number must be greater than the second number\n");
 			System.exit(0);
 		 }
@@ -30,7 +29,7 @@ public class GCD {
 			
 			return "GCD is: "+denominator;
 		}else {
-			 gcd(denominator,remainder);
+			 gcd(denominator,remainder);// use recursive function.
 		 }
 		return "there is no GCD for the two numbers";
 	}
